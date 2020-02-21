@@ -10,7 +10,7 @@ fs.createReadStream('customer-data.csv')
       if(count == 1){
         jsonString += '['
       } else {
-        jsonString += JSON.stringify(row)+","
+        jsonString += JSON.stringify(row, null, 2)+","
       }
       count++
   })
